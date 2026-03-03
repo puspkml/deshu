@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Her Story</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- INTRO -->
+<section class="section intro">
+  <h2>Today isn’t just your birthday.</h2>
+  <h3>It’s the story...</h3>
+  <h3>The Story Untold</h3>
+  <button id="startBtn" class="primary-btn">Let's Begin</button>
+</section>
+
+<!-- PIG SECTION -->
+<section class="section pig-section" id="pigSection">
+  <div class="white-stage">
+    <div id="particles" class="particles"></div>
+    <div id="spotlight" class="spotlight"></div>
+    <div id="storyText" class="story-text"></div>
+    <img src="assets/images/pig.png" id="pigImg" class="pig-img">
+    <button id="continueBtn" class="primary-btn hidden">
+      Reveal the Queen
+    </button>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="docu-section" id="timelineSection">
+
+
+  <!-- Film Grain Layer -->
+  <div class="film-grain"></div>
+
+  <!-- Title Card -->
+  <div class="title-card">
+    <h2>A Story Years in the Making</h2>
+  </div>
+
+  <div class="docu-content">
+      <h3>2010</h3>
+      <h1>The First Chapter</h1>
+      <p>Tiny shoes, messy giggles, and a world that felt impossibly big. Every corner held a new adventure.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2010" style="background-image:url('assets/images/2010.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2011</h3>
+      <h1>Discovering Wonder</h1>
+      <p>The questions never stopped. Why this? Why that? Curiosity became her favorite hobby.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2011" style="background-image:url('assets/images/2011.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2012</h3>
+      <h1>A Growing Light</h1>
+      <p>Friendships started forming, laughter grew louder, and confidence began peeking through.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2012" style="background-image:url('assets/images/2012.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2013</h3>
+      <h1>The Fire Within</h1>
+      <p>She had opinions now — strong ones. A little spark that refused to be ignored.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2013" style="background-image:url('assets/images/2013.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2014</h3>
+      <h1>The Brave Explorer</h1>
+      <p>New classrooms felt overwhelming at first, but she stepped in anyway. That’s when bravery quietly showed up.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2014" style="background-image:url('assets/images/2014.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2015</h3>
+      <h1>Strength in Silence</h1>
+      <p>She learned to observe more, speak less, and grow in ways people didn’t always notice.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2015" style="background-image:url('assets/images/2015.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2016</h3>
+      <h1>Kindness as Power</h1>
+      <p>Somehow, she made spaces softer. A steady presence, a warm smile, a heart that cared deeply.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2016" style="background-image:url('assets/images/2016.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2017</h3>
+      <h1>Finding Her Voice</h1>
+      <p>She began speaking up more — not loudly, but confidently. Her identity slowly started taking shape.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2017" style="background-image:url('assets/images/2017.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2018</h3>
+      <h1>The Glow Up</h1>
+      <p>Something shifted. A little more self-belief, a little more clarity, a noticeable spark in her eyes.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2018" style="background-image:url('assets/images/2018.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2019</h3>
+      <h1>Dreaming Bigger</h1>
+      <p>The future stopped feeling far away. Dreams started turning into goals she could actually chase.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2019" style="background-image:url('assets/images/2019.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2020</h3>
+      <h1>Built in Resilience</h1>
+      <p>When the world slowed down, she adapted. Challenges didn’t shrink her — they strengthened her.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2020" style="background-image:url('assets/images/2020.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2021</h3>
+      <h1>Rising Stronger</h1>
+      <p>Lessons got heavier, but so did her determination. She learned to carry both.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2021" style="background-image:url('assets/images/2021.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2022</h3>
+      <h1>Unstoppable Energy</h1>
+      <p>She stopped second-guessing herself. Decisions became firmer. Steps became faster.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2022" style="background-image:url('assets/images/2022.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2023</h3>
+      <h1>The Woman She Became</h1>
+      <p>There was depth now — strength mixed with grace, confidence balanced with humility.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2023" style="background-image:url('assets/images/2023.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2024</h3>
+      <h1>Radiance</h1>
+      <p>She no longer tried to prove herself. She simply showed up — and that was enough.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2024" style="background-image:url('assets/images/2024.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2025</h3>
+      <h1>Limitless</h1>
+      <p>Standing on the edge of adulthood, not scared — just excited for what’s next.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2025" style="background-image:url('assets/images/2025.png')">
+  </div>
+
+  <div class="docu-content">
+      <h3>2026</h3>
+      <h1>The Era of Her</h1>
+      <p>This isn’t about becoming someone new. It’s about fully stepping into who she’s always been.</p>
+  </div>
+
+  <div class="docu-panel" data-era="2026" style="background-image:url('assets/images/2026.png')">
+  </div>
+
+
+  <div class="docu-panel center-panel" data-era="end" style="background-image:url('')">
+    <div class="docu-content">
+      <h1>The Beloved Ones</h1>
+      <p>Love. Messages. Wishes.</p>
+    </div>
+  <button id="messagesBtn" class="docu-btn">
+    Read the Messages
+  </button>
+
+  </div>
+
+</section>
+<canvas id="warpCanvas"></canvas>
+<div id="whiteFade"></div>
+<div id="fadeOverlay"></div>
+
+<script src="timeline.js"></script>
+<audio id="whooshSound" src="assets/sounds/whoosh.mp3" preload="auto" playsinline></audio>
+<audio id="warpSound" src="assets/sounds/warp.mp3" preload="auto" playsinline></audio>
+<audio id="chimeSound" src="assets/sounds/chime.mp3" preload="auto" playsinline></audio>
+<audio id="drumSound" src="assets/sounds/drumroll.mp3" preload="auto" playsinline></audio>
+<audio id="funnySound" src="assets/sounds/funny.mp3" preload="auto" playsinline></audio>
+<audio id="scrollSound" src="assets/sounds/scroll.mp3" preload="auto" playsinline></audio>
+<audio id="aestheticSound" src="assets/sounds/aesthetic.mp3" preload="auto" loop playsinline></audio>
+</body>
+</html>

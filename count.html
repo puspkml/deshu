@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="black center fullscreen">
+
+<!-- ENTRY SCREEN -->
+<div id="entryScreen" class="center fullscreen" style="position:fixed; inset:0; z-index:3000;">
+  <button id="enterBtn" style="font-size:20px; padding:15px 40px;">
+    Enter the Countdown
+  </button>
+</div>
+
+<!-- COUNTDOWN CONTENT -->
+<h1 id="timer"
+    style="font-size: clamp(40px,10vw,80px); font-weight: 300; display:none;">
+</h1>
+
+<div id="flash"></div>
+<div id="dramaticText" class="dramatic-text"></div>
+<canvas id="fireworksCanvas"></canvas>
+<div id="creamFade"></div>
+
+<!-- AUDIO -->
+<audio id="bangSound" src="assets/sounds/bang.mp3" preload="auto" playsinline></audio>
+<audio id="beepSound" src="assets/sounds/heart.mp3" preload="auto" playsinline></audio>
+<audio id="tickSound" src="assets/sounds/beep.mp3" preload="auto" playsinline></audio>
+<audio id="transitionSound" src="assets/sounds/whoosh.mp3" preload="auto" playsinline></audio>
+<audio id="fireworksSound" src="assets/sounds/fireworks.mp3" preload="auto" playsinline></audio>
+
+<script src="count.js"></script>
+</body>
+</html>

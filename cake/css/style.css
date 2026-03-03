@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+}
+
+h1, h2 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body.pastel {
+  background: radial-gradient(circle at center, #FED9E9, #FEBDE2);
+  transition: background 2s ease;
+}
+
+.fullscreen {
+  height: 100vh;
+  width: 100%;
+}
+
+.pastel {
+  background: radial-gradient(circle at center, #FED9E9, #FEBDE2);
+}
+/* ================= CAKE SECTION ================= */
+
+.wish-text {
+  transition: opacity 1s ease;
+  margin-bottom: 70px;
+  font-size: clamp(20px, 5vw, 32px);
+}
+
+.cake-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cake {
+  transition: transform 0.3s ease;
+  position: relative;
+  width: min(105vw, 840px);
+  height: min(70vw, 600px);
+
+  background-image: url("../assets/images/cake.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* Large candles */
+.candle {
+  position: absolute;
+  width: 27px;
+  height: 108px;
+  background: linear-gradient(to bottom, #ffffff, #dddddd);
+  border-radius: 400px;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.flame {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 25px;
+  height: 40px;
+  background: radial-gradient(circle, #fff59d 30%, #ff6f00 75%);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: flicker 0.1s infinite alternate ease-in-out;
+  box-shadow: 0 0 30px orange, 0 0 50px gold;
+}
+
+.candle.out .flame {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.3);
+  transition: all 0.6s ease;
+}
+@keyframes flicker {
+  from { transform: translateX(-50%) scale(1); }
+  to   { transform: translateX(-50%) scale(1.2); }
+}
+
+
+
+.counter {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* Fireworks canvas */
+#fireworks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Final message screen */
+.final-screen {
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.final-screen.show {
+  opacity: 1;
+}
+
+.final-screen h2 {
+  font-size: clamp(22px, 4vw, 36px);
+  margin-bottom: 15px;
+}
+
+.final-screen p {
+  font-size: clamp(16px, 2.5vw, 22px);
+  margin: 6px 0;
+}
+
+.blow-btn {
+  margin-top: 30px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #98c1e4, #deec9d);
+  border: none;
+  cursor: pointer;
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.blow-btn:hover {
+  transform: scale(1.08);
+}
+
+/* Smoke */
+.smoke {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 20px;
+  height: 40px;
+  background: rgba(146, 141, 141, 0.74);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: riseSmoke 1.5s ease forwards;
+}
+
+@keyframes riseSmoke {
+  0% { opacity: 0.8; transform: translateX(-50%) translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-60px) scale(2); }
+}
