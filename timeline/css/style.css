@@ -436,9 +436,12 @@ body {
 
 /* Title Card */
 
+/* Title Card */
+
 .title-card{
   height:100vh;
   display:flex;
+  flex-direction:column;   /* stack elements vertically */
   align-items:center;
   justify-content:center;
   text-align:center;
@@ -451,7 +454,10 @@ body {
   font-size:clamp(28px,5vw,60px);
   opacity:0;
   animation:fadeTitle 3s ease forwards;
+  margin-bottom:25px;   /* space before scroll indicator */
 }
+
+
 
 @keyframes fadeTitle{
   0%{opacity:0;}
