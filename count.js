@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.classList.add("loaded");
 
-  const target = new Date("March 2, 2026 15:03:00").getTime();
+  const target = new Date("March 5, 2026 00:00:00").getTime();
 
   const entryScreen = document.getElementById("entryScreen");
   const enterBtn = document.getElementById("enterBtn");
