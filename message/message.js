@@ -3,20 +3,23 @@ const introScreen = document.getElementById("introScreen");
 const videoContainer = document.getElementById("videoContainer");
 const moveBtn = document.getElementById("moveBtn");
 
-const VIDEO_DURATION = 47000; // 9min 7sec
+const VIDEO_DURATION = 47000; // 47 seconds
 
 startBtn.addEventListener("click", () => {
 
     introScreen.style.opacity = "0";
 
     setTimeout(() => {
+
         introScreen.style.display = "none";
         videoContainer.style.opacity = "1";
-    }, 900);
 
-    setTimeout(() => {
-        moveBtn.style.opacity = "1";
-    }, VIDEO_DURATION);
+        // start timer AFTER video appears
+        setTimeout(() => {
+            moveBtn.style.opacity = "1";
+        }, VIDEO_DURATION);
+
+    }, 900);
 
 });
 
