@@ -1,7 +1,9 @@
 const startBtn = document.getElementById("startBtn");
 const introScreen = document.getElementById("introScreen");
-const messageVideo = document.getElementById("messageVideo");
+const videoContainer = document.getElementById("videoContainer");
 const moveBtn = document.getElementById("moveBtn");
+
+const VIDEO_DURATION = 547000; // 9min 7sec
 
 startBtn.addEventListener("click", () => {
 
@@ -9,15 +11,14 @@ startBtn.addEventListener("click", () => {
 
     setTimeout(() => {
         introScreen.style.display = "none";
-        messageVideo.style.opacity = "1";
-        messageVideo.play();
-    }, 1200);
+        videoContainer.style.opacity = "1";
+    }, 900);
+
+    setTimeout(() => {
+        moveBtn.style.opacity = "1";
+    }, VIDEO_DURATION);
 
 });
-
-messageVideo.onended = () => {
-    moveBtn.style.opacity = "1";
-};
 
 moveBtn.addEventListener("click", () => {
     window.location.href = "../cake/cake.html";
