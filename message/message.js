@@ -3,7 +3,7 @@ const introScreen = document.getElementById("introScreen");
 const videoContainer = document.getElementById("videoContainer");
 const moveBtn = document.getElementById("moveBtn");
 
-const VIDEO_DURATION = 547000; // 9min 7sec
+const VIDEO_DURATION = 47000; // 9min 7sec
 
 startBtn.addEventListener("click", () => {
 
