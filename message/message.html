@@ -4,13 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A Message For You</title>
-<link rel="stylesheet" href="css/style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-<style>
-
-
-</style>
 </head>
 
 <body>
@@ -22,9 +19,13 @@
     <button id="startBtn" class="btn">Let's hear them out</button>
 </div>
 
-<video id="messageVideo" playsinline preload="auto">
-    <source src="assets/videos/message.mp4" type="video/mp4">
-</video>
+<div id="videoContainer">
+    <iframe
+        src="https://www.youtube.com/embed/lT81FmZEAyA"
+        allow="encrypted-media"
+        allowfullscreen>
+    </iframe>
+</div>
 
 <button id="moveBtn" class="move-btn">Move On</button>
 
